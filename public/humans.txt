@@ -1,0 +1,13 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Developer: John Rees
+  Site: bitsushi.com
+  Twitter: @bitsushi
+  Location: North Wales, UK
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery

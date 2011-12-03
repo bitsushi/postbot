@@ -10,7 +10,6 @@
 //= require_tree .
 
 $('#container').masonry({
-  // options
   itemSelector : '.type',
   columnWidth : 240
 });
