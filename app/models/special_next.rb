@@ -1,0 +1,2 @@
+class SpecialNext < Item
+end

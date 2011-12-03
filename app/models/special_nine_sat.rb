@@ -1,0 +1,2 @@
+class SpecialNineSat < Item
+end

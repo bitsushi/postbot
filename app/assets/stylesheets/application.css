@@ -1,0 +1,29 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree .
+*/
+
+.first_price {
+  background: #C22C2A;
+}
+
+.second_price {
+  background: #1D85BE;
+}
+
+* {
+  font-family: Futura;
+  text-shadow: 1px 1px 1px #FFF;
+}
+
+.type {
+  width: 300px;
+  display: block;
+  float: left;
+  margin: 5px;
+  background: #EEE;
+  padding: 5px;
+}

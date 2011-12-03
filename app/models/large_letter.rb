@@ -1,0 +1,2 @@
+class LargeLetter < Item
+end

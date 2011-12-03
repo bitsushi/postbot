@@ -1,0 +1,2 @@
+class Packet < Item
+end

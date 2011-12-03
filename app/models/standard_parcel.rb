@@ -1,0 +1,2 @@
+class StandardParcel < Item
+end

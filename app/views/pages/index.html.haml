@@ -1,0 +1,82 @@
+= content_for(:head) do
+  :javascript
+    window.rates = #{@data.to_json}
+
+#filter_bar
+  = label_tag :weight
+  = text_field_tag :weight
+
+  = select_tag :unit, options_for_select([['g', 1], ['kg', 1000], ['lb', 453.59237]])
+
+#container
+  .type.letter
+    %h3 Letter
+    .blurb
+      %ul
+        %li Most letters
+        %li Postcards
+        %li Bills and statements
+        %li Some brochures and catalogues • Most greetings cards
+    .first_price
+    .first_franking_price
+    .second_price
+    .second_franking_price
+
+  .type.large_letter
+    %h3 Large Letter
+    .blurb
+      %ul
+        %li Letters containing unfolded A4 paper • Most brochures
+        %li CDs
+        %li DVDs
+        %li Catalogues and company reports
+    .first_price
+    .first_franking_price
+    .second_price
+    .second_franking_price
+
+  .type.packet
+    %h3 Packet
+    .first_price
+    .first_franking_price
+    .second_price
+    .second_franking_price
+
+  .type.standard_parcel
+    %h3 Standard Parcel
+    .blurb
+      Ideal for sending non-urgent parcels across the UK The right choice for your business if you:
+      %ul
+        %li need your parcels delivered within 3-5 working days
+        %li want to cut costs on sending your parcels
+        %li need a free certificate of posting and enhanced compensation for loss or damage
+        %li have items up to 1.5m long and up to 20kg in weight (combined length and girth must not
+        exceed 3m)
+    .first_price
+
+  .type#special_delivery
+    %h2 Special Delivery
+
+    %table
+      %thead
+        %tr
+          %th
+          %th Stamp
+          %th Franking
+      %tbody
+        %tr.special_next
+          %th Next Day
+          %td.first_price
+          %td.first_franking_price
+        %tr.special_next_sat
+          %th Next Day (Sat)
+          %td.first_price
+          %td.first_franking_price
+        %tr.special_nine
+          %th Pre 9AM
+          %td.first_price
+          %td.first_franking_price
+        %tr.special_nine_sat
+          %th Pre 9AM (Sat)
+          %td.first_price
+          %td.first_franking_price
